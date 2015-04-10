@@ -1,0 +1,91 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>nl.xup.prefs.demo</groupId>
+    <artifactId>demo-root</artifactId>
+    <version>0.1-SNAPSHOT</version>
+    <relativePath>..</relativePath>
+  </parent>
+
+  <groupId>nl.xup.prefs.demo</groupId>
+  <artifactId>demo-notification</artifactId>
+  <packaging>jar</packaging>
+  <version>0.1-SNAPSHOT</version>
+  <name>Prefs notification demo</name>
+
+  <properties>
+    <mainClass>nl.xup.prefs.demo.notification.Start</mainClass>
+    <backingstore>nl.xup.prefs.memory.MemoryPreferencesFactory</backingstore>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>nl.xup.prefs</groupId>
+      <artifactId>prefs-memory</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>nl.xup.prefs</groupId>
+      <artifactId>prefs-distributed-memory</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifest>
+              <addClasspath>true</addClasspath>
+              <mainClass>${mainClass}</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <configuration>
+          <mainClass>${mainClass}</mainClass>
+          <classpathScope>test</classpathScope>
+          <systemProperties>
+            <systemProperty>
+              <key>java.util.prefs.PreferencesFactory</key>
+              <value>${backingstore}</value>
+            </systemProperty>
+          </systemProperties>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <profiles>
+    <profile>
+      <id>distributed</id>
+      <properties>
+        <backingstore>nl.xup.prefs.memory.DistributedMemoryPreferencesFactory</backingstore>
+      </properties>
+    </profile>
+  </profiles>
+</project>

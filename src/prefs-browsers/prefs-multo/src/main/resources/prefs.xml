@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE preferences SYSTEM "http://java.sun.com/dtd/preferences.dtd">
+<preferences EXTERNAL_XML_VERSION="1.0">
+  <root type="system">
+    <map />
+    <node name="nl">
+      <map />
+      <node name="politie">
+        <map />
+        <node name="bvh">
+          <map />
+          <node name="lib">
+            <map />
+            <node name="flowRegistry">
+              <map />
+              <node name="elementen">
+                <map />
+                <node name="TODO">
+                  <map>
+                    <entry key="omschrijving" value="Alleen gebruiken voor incomplete flow beschrijvingen." />
+                    <entry key="class" value="nl.politie.bvh.lib.flow.SimpleFlowElement" />
+                    <entry key="contextPropertyNames" value="" />
+                  </map>
+                  <node name="properties">
+                    <map>
+                    </map>
+                  </node>
+                </node>
+                <node name="AANGEVER">
+                  <map>
+                    <entry key="omschrijving" value="Voor het opgeven van een aangever." />
+                    <entry key="class" value="nl.isc.bvh.avi.pageflow.elementen.Aangever" />
+                    <!--
+                       contextPropertyNames is een komma gescheiden lijst die aangeeft  
+                       welke flow afhankelijke properties vereist zijn voor een 
+                       correcte werking van dit flow element. Deze properties dienen
+                       voor te komen in de sectie 'contextProperties' van elke flow 
+                       waarin het bijbehorende flow element voorkomt
+                    -->
+                    <entry key="contextPropertyNames" value="" />
+                  </map>
+                  <node name="properties">
+                    <map>
+                      <!--
+                        Geeft aan welke bvh core rollen van gebruikt worden. Hiermee kan 
+                        een beheerscherm bepalen of dit flow element van toepassing kan
+                        zijn voor een bepaalde maatschappelijke klasse. Indien de MK een (1)
+                        van de genoemde rollen niet  ondersteund, dan kan dit element dus
+                        niet gebruikt worden in een flow voor die MK.
+                      -->
+                      <entry key="rollen" value="AANGEVER" />
+                    </map>
+                  </node>
+                </node>
+                <node name="BEDRIJF">
+                  <map>
+                    <entry key="omschrijving" value="Alleen gebruiken voor incomplete flow beschrijvingen." />
+                    <entry key="class" value="nl.politie.bvh.lib.flow.SimpleFlowElement" />
+                    <entry key="contextPropertyNames" value="" />
+                  </map>
+                  <node name="properties">
+                    <map>
+                    </map>
+                  </node>
+                </node>
+                <node name="MODUS-OPERANDI">
+                  <map>
+                    <entry key="omschrijving" value="Modus operandi" />
+                    <entry key="class" value="nl.politie.bvh.lib.flow.SimpleFlowElement" />
+                    <entry key="contextPropertyNames" value="" />
+                  </map>
+                </node>
+                <node name="D13MO">
+                  <map>
+                    <entry key="omschrijving" value="Modus operandi voor D13" />
+                    <entry key="class" value="nl.politie.bvh.lib.flow.SimpleFlowElement" />
+                    <entry key="contextPropertyNames" value="" />
+                  </map>
+                </node>
+                <node name="GETUIGEN">
+                  <map>
+                    <entry key="omschrijving" value="Alleen gebruiken voor incomplete flow beschrijvingen." />
+                    <entry key="class" value="nl.politie.bvh.lib.flow.SimpleFlowElement" />
+                    <entry key="contextPropertyNames" value="" />
+                  </map>
+                  <node name="properties">
+                    <map>
+                    </map>
+                  </node>
+                </node>
+                <node name="GOED">
+                  <map>
+                    <entry key="omschrijving" value="Voor het opgeven van goederen." />
+                    <entry key="class" value="nl.isc.bvh.avi.pageflow.elementen.Goed" />
+                    <entry key="contextPropertyNames" value="rol,alleenNietRechercheerbaar,checkHouderEigenaar" />
+                    <!--
+                      checkHouderEigenaar: boolean die aangeeft of op deze rollen
+                      gecontroleerd moet worden. Mogelijke waarden zijn true of elke
+                      andere waarde voor niet true (dus false).
+                    -->
+                  </map>
+                  <node name="properties">
+                    <map>
+                      <entry key="rollen" value="" />
+                    </map>
+                  </node>
+                </node>
+                <node name="GOED-EIGENAARS">
+                  <map>
+                    <entry key="omschrijving" value="Voor het opgeven van eigenaars van goederen." />
+                    <entry key="class" value="nl.isc.bvh.avi.pageflow.elementen.GoedEigenaars" />
+                    <entry key="contextPropertyNames" value="" />
+                  </map>
+                  <node name="properties">
+                    <map>
+                      <entry key="rollen" value="" />
+                    </map>
+                  </node>
+                </node>
+                <node name="HOOFDGOED">
+                  <map>
+                    <entry key="omschrijving" value="Voor het opgeven van een hoofdgoed." />
+                    <entry key="class" value="nl.isc.bvh.avi.pageflow.elementen.HoofdGoed" />
+                    <entry key="contextPropertyNames" value="rol" />
+                  </map>
+                  <node name="properties">
+                    <map>
+                      <entry key="rollen" value="" />
+                    </map>
+                  </node>
+                </node>
+                <node name="INCIDENT">
+                  <map>
+                    <entry key="omschrijving" value="Voor het opgeven van incident informatie." />
+                    <entry key="class" value="nl.isc.bvh.avi.pageflow.elementen.Incident" />
+                    <entry key="contextPropertyNames" value="" />
+                  </map>
+                  <node name="properties">
+                    <map>
+                      <entry key="rollen" value="" />
+                    </map>
+                  </node>
+                </node>
+                <node name="MELDER">
+                  <map>
+                    <entry key="omschrijving" value="Voor het opgeven van een melder." />
+                    <entry key="class" value="nl.isc.bvh.avi.pageflow.elementen.Melder" />
+                    <entry key="contextPropertyNames" value="" />
+                  </map>
+                  <node name="properties">
+                    <map>
+                      <entry key="rollen" value="MELDER" />
+                    </map>
+                  </node>
+                </node>
+                <node name="ONBEKENDEDADER">
+                  <map>
+                    <entry key="omschrijving" value="Alleen gebruiken voor incomplete flow beschrijvingen." />
+                    <entry key="class" value="nl.politie.bvh.lib.flow.SimpleFlowElement" />
+                    <entry key="contextPropertyNames" value="" />
+                  </map>
+                  <node name="properties">
+                    <map>
+                    </map>
+                  </node>
+                </node>
+                <node name="SAMENVATTING">
+                  <map>
+                    <entry key="omschrijving" value="Voor het tonen van de samenvatting." />
+                    <entry key="class" value="nl.isc.bvh.avi.pageflow.elementen.Samenvatting" />
+                    <entry key="contextPropertyNames"  value="template" />
+                  </map>
+                  <node name="properties">
+                    <map>
+                      <entry key="rollen" value="" />
+                    </map>
+                  </node>
+                </node>
+                <node name="TOELICHTING">
+                  <map>
+                    <entry key="omschrijving" value="Voor het tonen en eventueel bewerken van de toelichting." />
+                    <entry key="class" value="nl.isc.bvh.avi.pageflow.elementen.Toelichting" />
+                    <entry key="contextPropertyNames" value="template" />
+                  </map>
+                  <node name="properties">
+                    <map>
+                      <entry key="rollen" value="" />
+                    </map>
+                  </node>
+                </node>
+                <node name="VAARTUIG">
+                  <map>
+                    <entry key="omschrijving" value="Voor het tonen van de verklaring." />
+                    <entry key="class" value="nl.isc.bvh.avi.pageflow.elementen.Vaartuig" />
+                    <entry key="contextPropertyNames"  value="rol" />
+                  </map>
+                  <node name="properties">
+                    <map>
+                      <entry key="rollen" value="" />
+                    </map>
+                  </node>
+                </node>
+                <node name="VERKLARING">
+                  <map>
+                    <entry key="omschrijving" value="Voor het tonen van de verklaring." />
+                    <entry key="class" value="nl.isc.bvh.avi.pageflow.elementen.Verklaring" />
+                    <entry key="contextPropertyNames"  value="template,opmerking.verbalisant" />
+                  </map>
+                  <node name="properties">
+                    <map>
+                      <entry key="rollen" value="" />
+                    </map>
+                  </node>
+                </node>
+                <node name="VERLIEZER">
+                  <map>
+                    <entry key="omschrijving" value="Voor het opgeven van de verliezer." />
+                    <entry key="class" value="nl.isc.bvh.avi.pageflow.elementen.Verliezer" />
+                    <entry key="contextPropertyNames" value="" />
+                  </map>
+                  <node name="properties">
+                    <map>
+                      <entry key="rollen" value="VERLIEZER" />
+                    </map>
+                  </node>
+                </node>
+                <node name="VINDER">
+                  <map>
+                    <entry key="omschrijving" value="Voor het opgeven van de vinder." />
+                    <entry key="class" value="nl.isc.bvh.avi.pageflow.elementen.Vinder" />
+                    <entry key="contextPropertyNames" value="" />
+                  </map>
+                  <node name="properties">
+                    <map>
+                      <entry key="rollen" value="VINDER" />
+                    </map>
+                  </node>
+                </node>
+                <node name="VOERTUIG">
+                  <map>
+                    <entry key="omschrijving" value="Voor het opgeven van een voetuig" />
+                    <entry key="class" value="nl.politie.bvh.lib.flow.SimpleFlowElement" />
+                    <entry key="contextPropertyNames" value="" />
+                  </map>
+                </node>
+                <node name="WETTERWEE">
+                  <map>
+                    <entry key="omschrijving" value="Voor het opgeven van de wet Terwee informatie." />
+                    <entry key="class" value="nl.politie.bvh.lib.flow.SimpleFlowElement" />
+                    <entry key="contextPropertyNames" value="" />
+                  </map>
+                </node>
+              </node>
+              <node name="flows">
+                <map />
+                <node name="H31">
+                  <map>
+                    <entry key="omschrijving" value="Gevonden goederen" />
+                    <entry key="class" value="nl.isc.bvh.avi.pageflow.flow.AangifteFlow" />
+                    <entry key="flow"
+                      value="MELDER,VINDER,INCIDENT,GOED,VERKLARING,TOELICHTING,SAMENVATTING" />
+                  </map>
+                  <node name="properties">
+                    <map>
+                      <!-- 
+                        Zaak registratie uitbreidbaar kan ook middels een flow element.
+                        In dat geval geeft het flow element 'BESTAANDE-ZAAK' aan dat
+                        het gaat om een uitbreidbare zaakregistratie. 
+                      -->  
+                      <entry key="zaak.uitbreidbaar" value="false" />
+                    </map>
+                  </node>
+                  <!--
+                    Hieronder volgt de flow afhankelijke (context gevoelige) 
+                    properties van flow elementen. Hierbij heeft elke flow element 
+                    zijn eigen node, met in die node de in 'contextPropertyNames' 
+                    aangegeven properties. 
+                  -->
+                  <node name="contextProperties">
+                    <map />
+                    <node name="GOED">
+                      <map>
+                        <entry key="rol" value="GEVONDEN" />
+                        <entry key="alleenNietRechercheerbaar" value="false" />
+                        <entry key="checkHouderEigenaar" value="false" />
+                      </map>
+                    </node>
+                    <node name="VERKLARING">
+                      <map>
+                        <entry key="template" value="/verklaringen/H31.groovy" />
+                        <entry key="opmerking.verbalisant" value="true" />
+                      </map>
+                    </node>
+                    <node name="TOELICHTING">
+                      <map>
+                        <entry key="template" value="/toelichtingen/H31.groovy" />
+                      </map>
+                    </node>
+                    <node name="SAMENVATTING">
+                      <map>
+                        <entry key="template" value="/samenvatting/H31.groovy" />
+                      </map>
+                    </node>
+                  </node>
+                  <!--
+                    Deze node geeft aan welke formulieren allemaal van toepassing
+                    zijn voor de betreffende flow. De formulieren node bevat een
+                    map met settings die alle relevante formulieren opsomming. De
+                    value geeft eventueel aan welke checker te gebruiken is.
+                    Checkers kunnen bepalen of een formulier relevant in de context
+                    van aanwezige gegevens. Een voorbeeld hiervan is optionele
+                    formulieren. Dit zijn formulieren waarbij de gebruiker aan moet
+                    geven of het formulier gewenst is. (Strategy pattern, value
+                    geeft aan welke strategy te gebruiken.)
+                  -->  
+                  <node name="formulieren">
+                    <map>
+                      <entry key="PVGVV" value="nl.politie.bvh.formulieren.FormulierCheckHeeftMelderOfVinder" />
+                      <entry key="FOMUTRA" value="nl.politie.bvh.formulieren.FormulierCheckGebruikerGeselecteerdFormulier" />
+                    </map>
+                  </node>
+                </node>
+                <node name="H40">
+                  <map>
+                    <entry key="omschrijving" value="Verloren goederen" />
+                    <entry key="class" value="nl.isc.bvh.avi.pageflow.flow.AangifteFlow" />
+                    <entry key="flow"
+                      value="AANGEVER,VERLIEZER,INCIDENT,GOED,GOED-EIGENAARS,VERKLARING,TOELICHTING,SAMENVATTING" />
+                  </map>
+                  <node name="properties">
+                    <map>
+                      <entry key="zaak.uitbreidbaar" value="false" />
+                    </map>
+                  </node>
+                  <node name="contextProperties">
+                    <map/>
+                    <node name="GOED">
+                      <map>
+                        <entry key="rol" value="VERLOREN" />
+                        <entry key="alleenNietRechercheerbaar" value="false" />
+                        <entry key="checkHouderEigenaar" value="true" />
+                      </map>
+                    </node>
+                    <node name="VERKLARING">
+                      <map>
+                        <entry key="template" value="/verklaringen/H40.groovy" />
+                        <entry key="opmerking.verbalisant" value="true" />
+                      </map>
+                    </node>
+                    <node name="TOELICHTING">
+                      <map>
+                        <entry key="template" value="/toelichtingen/H40.groovy" />
+                      </map>
+                    </node>
+                    <node name="SAMENVATTING">
+                      <map>
+                        <entry key="template" value="/samenvatting/H40.groovy" />
+                      </map>
+                    </node>
+                  </node>
+                  <node name="formulieren">
+                    <map>
+                      <entry key="PVAANG" value="nl.politie.bvh.formulieren.FormulierCheckHeeftIdentiteitspapieren" />
+                      <entry key="PVGVV" value="nl.politie.bvh.formulieren.FormulierCheckHeeftOokNietIdentiteitspapieren" />
+                    </map>
+                  </node>
+                </node>
+                <node name="D13-Straatmeubilair">
+                  <map>
+                    <entry key="omschrijving" value="Verlaten plaats ongeval" />
+                    <entry key="class" value="nl.isc.bvh.avi.pageflow.flow.AangifteFlow" />
+                    <entry key="flow"
+                      value="BEDRIJF,AANGEVER,INCIDENT,GOED,GOED-EIGENAARS,D13MO,ONBEKENDEDADER,GETUIGEN,VERKLARING,TOELICHTING,SAMENVATTING" />
+                  </map>
+                  <node name="properties">
+                    <map>
+                      <entry key="zaak.uitbreidbaar" value="true" />
+                    </map>
+                  </node>
+                  <node name="contextProperties">
+                    <map/>
+                    <node name="GOED">
+                      <map>
+                        <entry key="rol" value="BETROKKEN" />
+                        <entry key="alleenNietRechercheerbaar" value="false" />
+                        <entry key="checkHouderEigenaar" value="true" />
+                      </map>
+                    </node>
+                    <node name="VERKLARING">
+                      <map>
+                        <entry key="template" value="/verklaringen/D13-Straatmeubilair.groovy" />
+                        <entry key="opmerking.verbalisant" value="true" />
+                      </map>
+                    </node>
+                    <node name="TOELICHTING">
+                      <map>
+                        <entry key="template" value="/toelichtingen/D13-Straatmeubilair.groovy" />
+                      </map>
+                    </node>
+                    <node name="SAMENVATTING">
+                      <map>
+                        <entry key="template" value="/samenvatting/D13-Straatmeubilair.groovy" />
+                      </map>
+                    </node>
+                  </node>
+                  <node name="formulieren">
+                    <map>
+                      <entry key="PVAANG" value="nl.politie.bvh.formulieren.FormulierCheckGebruikerGeselecteerdFormulier" />
+                      <entry key="FOMUTRA" value="nl.politie.bvh.formulieren.FormulierCheckGebruikerGeselecteerdFormulier" />
+                    </map>
+                  </node>
+                </node>
+                <node name="D13-KentekenVoertuig">
+                  <map>
+                    <entry key="omschrijving" value="Verlaten plaats ongeval" />
+                    <entry key="class" value="nl.isc.bvh.avi.pageflow.flow.AangifteFlow" />
+                    <entry key="flow"
+                      value="VOERTUIG,AANGEVER,INCIDENT,GOED,GOED-EIGENAARS,D13MO,ONBEKENDEDADER,GETUIGEN,VERKLARING,TOELICHTING,SAMENVATTING" />
+                  </map>
+                  <node name="properties">
+                    <map>
+                      <entry key="zaak.uitbreidbaar" value="true" />
+                    </map>
+                  </node>
+                  <node name="contextProperties">
+                    <map/>
+                    <node name="GOED">
+                      <map>
+                        <entry key="rol" value="BETROKKEN" />
+                        <entry key="alleenNietRechercheerbaar" value="true" />
+                        <entry key="checkHouderEigenaar" value="true" />
+                      </map>
+                    </node>
+                    <node name="VERKLARING">
+                      <map>
+                        <entry key="template" value="/verklaringen/D13-KentekenVoertuig.groovy" />
+                        <entry key="opmerking.verbalisant" value="true" />
+                      </map>
+                    </node>
+                    <node name="TOELICHTING">
+                      <map>
+                        <entry key="template" value="/toelichtingen/D13-KentekenVoertuig.groovy" />
+                      </map>
+                    </node>
+                    <node name="SAMENVATTING">
+                      <map>
+                        <entry key="template" value="/samenvatting/D13-KentekenVoertuig.groovy" />
+                      </map>
+                    </node>
+                  </node>
+                  <node name="formulieren">
+                    <map>
+                      <entry key="PVAANG" value="nl.politie.bvh.formulieren.FormulierCheckGebruikerGeselecteerdFormulier" />
+                      <entry key="FOMUTRA" value="nl.politie.bvh.formulieren.FormulierCheckGebruikerGeselecteerdFormulier" />
+                    </map>
+                  </node>
+                </node>
+                <node name="D13-OverigeGoederen">
+                  <map>
+                    <entry key="omschrijving" value="Verlaten plaats ongeval" />
+                    <entry key="class" value="nl.isc.bvh.avi.pageflow.flow.AangifteFlow" />
+                    <entry key="flow"
+                      value="AANGEVER,INCIDENT,GOED,GOED-EIGENAARS,D13MO,ONBEKENDEDADER,GETUIGEN,VERKLARING,TOELICHTING,SAMENVATTING" />
+                  </map>
+                  <node name="properties">
+                    <map>
+                      <entry key="zaak.uitbreidbaar" value="true" />
+                    </map>
+                  </node>
+                  <node name="contextProperties">
+                    <map/>
+                    <node name="GOED">
+                      <map>
+                        <entry key="rol" value="BETROKKEN" />
+                        <entry key="alleenNietRechercheerbaar" value="true" />
+                        <entry key="checkHouderEigenaar" value="true" />
+                      </map>
+                    </node>
+                    <node name="VERKLARING">
+                      <map>
+                        <entry key="template" value="/verklaringen/D13-OverigeGoederen.groovy" />
+                        <entry key="opmerking.verbalisant" value="true" />
+                      </map>
+                    </node>
+                    <node name="TOELICHTING">
+                      <map>
+                        <entry key="template" value="/toelichtingen/D13-OverigeGoederen.groovy" />
+                      </map>
+                    </node>
+                    <node name="SAMENVATTING">
+                      <map>
+                        <entry key="template" value="/samenvatting/D13-OverigeGoederen.groovy" />
+                      </map>
+                    </node>
+                  </node>
+                  <node name="formulieren">
+                    <map>
+                      <entry key="PVAANG" value="nl.politie.bvh.formulieren.FormulierCheckGebruikerGeselecteerdFormulier" />
+                      <entry key="FOMUTRA" value="nl.politie.bvh.formulieren.FormulierCheckGebruikerGeselecteerdFormulier" />
+                    </map>
+                  </node>
+                </node>
+                <node name="A11">
+                  <map>
+                    <entry key="omschrijving" value="Diefstal uit/vanaf vaartuig" />
+                    <entry key="class" value="nl.isc.bvh.avi.pageflow.flow.AangifteFlow" />
+                    <entry key="flow"
+                      value="VAARTUIG,AANGEVER,INCIDENT,GOED,MODUS-OPERANDI,ONBEKENDEDADER,GETUIGEN,VERKLARING,TOELICHTING,SAMENVATTING" />
+                  </map>
+                  <node name="properties">
+                    <map>
+                      <entry key="zaak.uitbreidbaar" value="true" />
+                    </map>
+                  </node>
+                  <node name="contextProperties">
+                    <map/>
+                    <node name="VAARTUIG">
+                      <map>
+                        <entry key="rol" value="betrokken" />
+                      </map>
+                    </node>
+                    <node name="GOED">
+                      <map>
+                        <entry key="rol" value="gestolen" />
+                        <entry key="alleenNietRechercheerbaar" value="true" />
+                        <entry key="checkHouderEigenaar" value="true" />
+                      </map>
+                    </node>
+                    <node name="VERKLARING">
+                      <map>
+                        <entry key="template" value="/verklaringen/A11.groovy" />
+                        <entry key="opmerking.verbalisant" value="true" />
+                      </map>
+                    </node>
+                    <node name="TOELICHTING">
+                      <map>
+                        <entry key="template" value="/toelichtingen/A11.groovy" />
+                      </map>
+                    </node>
+                    <node name="SAMENVATTING">
+                      <map>
+                        <entry key="template" value="/samenvatting/A11.groovy" />
+                      </map>
+                    </node>
+                  </node>
+                  <node name="formulieren">
+                    <map>
+                      <entry key="PVAANG" value="" />
+                      <entry key="FOMUTRA" value="" />
+                    </map>
+                  </node>
+                </node>
+                <node name="A75">
+                  <map>
+                    <entry key="omschrijving" value="Diefstal van vaartuig" />
+                    <entry key="class" value="nl.isc.bvh.avi.pageflow.flow.AangifteFlow" />
+                    <entry key="flow"
+                      value="VAARTUIG,AANGEVER,INCIDENT,GOED,MODUS-OPERANDI,ONBEKENDEDADER,GETUIGEN,VERKLARING,TOELICHTING,SAMENVATTING" />
+                  </map>
+                  <node name="properties">
+                    <map>
+                      <entry key="zaak.uitbreidbaar" value="true" />
+                    </map>
+                  </node>
+                  <node name="contextProperties">
+                    <map/>
+                    <node name="VAARTUIG">
+                      <map>
+                        <entry key="rol" value="gestolen" />
+                      </map>
+                    </node>
+                    <node name="GOED">
+                      <map>
+                        <entry key="rol" value="gestolen" />
+                        <entry key="alleenNietRechercheerbaar" value="true" />
+                        <entry key="checkHouderEigenaar" value="true" />
+                      </map>
+                    </node>
+                    <node name="VERKLARING">
+                      <map>
+                        <entry key="template" value="/verklaringen/A75.groovy" />
+                        <entry key="opmerking.verbalisant" value="true" />
+                      </map>
+                    </node>
+                    <node name="TOELICHTING">
+                      <map>
+                        <entry key="template" value="/toelichtingen/A75.groovy" />
+                      </map>
+                    </node>
+                    <node name="SAMENVATTING">
+                      <map>
+                        <entry key="template" value="/samenvatting/A75.groovy" />
+                      </map>
+                    </node>
+                  </node>
+                  <node name="formulieren">
+                    <map>
+                      <entry key="PVAANG" value="" />
+                      <entry key="FOMUTRA" value="" />
+                    </map>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>  
+        </node>
+      </node>
+    </node>
+    <node name="node 2">
+      <map />
+    </node>
+    <node name="node 3">
+      <map />
+      <node name="node 3.1">
+        <map />
+      </node>
+    </node>
+  </root>
+</preferences>

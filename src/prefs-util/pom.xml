@@ -1,0 +1,68 @@
+<project>
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>nl.xup.prefs</groupId>
+		<artifactId>prefs-root</artifactId>
+		<version>0.1-SNAPSHOT</version>
+		<relativePath>..</relativePath>
+	</parent>
+
+	<groupId>nl.xup.prefs</groupId>
+	<artifactId>prefs-util</artifactId>
+	<packaging>jar</packaging>
+	<version>0.1-SNAPSHOT</version>
+	<name>XupPrefs :: Utils</name>
+	<description>
+    Utilities to ease using preferences.
+  </description>
+	<url>http://opensource.xup.nl/prefs/private</url>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>nl.xup.prefs</groupId>
+			<artifactId>prefs-memory</artifactId>
+			<scope>test</scope>
+			<version>${project.version}</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<forkMode>once</forkMode>
+					<systemProperties>
+						<property>
+							<name>
+								java.util.prefs.PreferencesFactory
+							</name>
+							<value>
+								nl.xup.prefs.memory.MemoryPreferencesFactory
+							</value>
+						</property>
+					</systemProperties>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

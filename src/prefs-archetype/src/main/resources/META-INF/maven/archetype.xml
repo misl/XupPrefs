@@ -1,0 +1,14 @@
+<archetype>
+  <id>archetype</id>
+  <sources>
+    <source>src/main/java/MyPreferencesFactory.java</source>
+    <source>src/main/java/MyPreferences.java</source>
+  </sources>
+  <testSources>
+    <source>src/test/java/gnu/util/Classpath.java</source>
+    <source>src/test/java/gnu/util/ReloadableClassLoader.java</source>
+    <source>src/test/java/PreferencesTestBase.java</source>
+    <source>src/test/java/MyPreferencesFactoryTest.java</source>
+    <source>src/test/java/MyPreferencesTest.java</source>
+  </testSources>
+</archetype>

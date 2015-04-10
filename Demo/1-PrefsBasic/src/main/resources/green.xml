@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE preferences SYSTEM "http://java.sun.com/dtd/preferences.dtd">
+<preferences EXTERNAL_XML_VERSION="1.0">
+  <root type="system">
+    <map/>
+    <node name="nl">
+      <map/>
+      <node name="xup">
+        <map/>
+        <node name="prefs">
+          <map/>
+          <node name="demo">
+            <map/>
+            <node name="basic">
+              <map>
+                <entry key="color" value="green" />
+              </map>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+</preferences>
