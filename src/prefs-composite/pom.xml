@@ -4,7 +4,7 @@
   <parent>
     <groupId>nl.xup.prefs</groupId>
     <artifactId>prefs-root</artifactId>
-    <version>0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
     <relativePath>..</relativePath>
   </parent>
 
@@ -39,7 +39,7 @@
     <dependency>
       <groupId>nl.xup.prefs</groupId>
       <artifactId>prefs-memory</artifactId>
-      <version>0.1-SNAPSHOT</version>
+      <version>1.0.0</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
