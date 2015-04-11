@@ -15,7 +15,6 @@
   <artifactId>prefs-multo</artifactId>
   <packaging>war</packaging>
 
-  <version>1.0-SNAPSHOT</version>
   <name>XupPrefs-Multo</name>
   <description>
     Web based Java Preferences browser. 

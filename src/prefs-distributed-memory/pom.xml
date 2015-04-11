@@ -12,7 +12,6 @@
   <groupId>nl.xup.prefs</groupId>
   <artifactId>prefs-distributed-memory</artifactId>
   <packaging>jar</packaging>
-  <version>0.1-SNAPSHOT</version>
   <name>XupPrefs-DistributedMemory</name>
   <description>
     Java Preferences API implementation for having preferences in  

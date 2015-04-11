@@ -12,7 +12,6 @@
   <groupId>nl.xup.prefs</groupId>
   <artifactId>prefs-browsers</artifactId>
   <packaging>pom</packaging>
-  <version>0.1-SNAPSHOT</version>
   <name>XupBrowsers</name>
   <url>http://opensource.xup.nl/prefs</url>
 
