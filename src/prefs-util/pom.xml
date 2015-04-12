@@ -23,6 +23,11 @@
 			<artifactId>slf4j-api</artifactId>
 			<scope>compile</scope>
 		</dependency>
+    <dependency>
+      <groupId>nl.xup.prefs</groupId>
+      <artifactId>prefs-memory</artifactId>
+      <version>${project.version}</version>
+    </dependency>
 
 		<dependency>
 			<groupId>junit</groupId>
@@ -33,12 +38,6 @@
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-simple</artifactId>
 			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>nl.xup.prefs</groupId>
-			<artifactId>prefs-memory</artifactId>
-			<scope>test</scope>
-			<version>${project.version}</version>
 		</dependency>
 	</dependencies>
 
